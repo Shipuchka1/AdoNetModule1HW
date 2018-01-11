@@ -1,0 +1,34 @@
+﻿<Window x:Class="AdoNetMoule1HW.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdoNetMoule1HW"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="705">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Sql">
+                <StackPanel>
+                    
+                <Button Height="30" Width="100" Content="SqlConnect" Click="SqlButton_Click"></Button>
+                <Label x:Name="MessageSqlLabel" Height="400"></Label>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="OleDb">
+                <StackPanel>
+
+                    <Button Height="30" Width="100" Content="OleDbConnect" Click="OleDbButton_Click"></Button>
+                    <Label x:Name="MessageOleDbLabel" Height="400"></Label>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Odbc">
+                <StackPanel>
+
+                    <Button Height="30" Width="100" Content="OdbcConnect" Click="OdbcButton_Click"></Button>
+                    <Label x:Name="MessageOdbcLabel" Height="400"></Label>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
