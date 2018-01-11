@@ -132,6 +132,8 @@ namespace AdoNetMoule1HW
                 MessageOdbcLabel.Content += "Подключение открыто\n";
 
 
+
+
                 MessageOdbcLabel.Content += "Свойство подключения\n";
                 MessageOdbcLabel.Content += "\t--> cтрока подключения\n" + con.ConnectionString + "\n";
                 MessageOdbcLabel.Content += "\t--> база данных\n" + con.Database + "\n";
